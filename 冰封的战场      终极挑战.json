@@ -1,0 +1,476 @@
+{
+  "#comment": "Iceage Zomboss",
+  "version": 1,
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "ForceToWorldMap": true,
+        "LevelNumber": 40,
+        "FlickPowerupRightEdgeOffset": -205,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "MusicType": "MiniGame_A",
+        "NormalPresentTable": "egypt_normal_01",
+        "RepeatPlayForceToWorldMap": true,
+        "ShinyPresentTable": "egypt_shiny_01",
+        "VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)",
+        "GameFeaturesToUnlock": [
+          "world_trophy_iceage"
+        ],
+        "LoadDefaultMusic": false,
+        "FirstIntroNarrative": "EditorFirstIntroNarrative",
+        "ReplayIntroNarrative": "EditorFirstIntroNarrative",
+        "FirstOutroNarrative": "EditorFirstOutroNarrative",
+        "Name": "冰封的战场      终极挑战",
+        "Description": "话说僵尸博士曾在现代发现了一头猛犸象，二话不说就把它解剖了。",
+        "StageModule": "RTID(IceageStage@LevelModules)",
+        "Modules": [
+          "RTID(IceageZombossIntro@LevelModules)",
+          "RTID(ConveyorBelt@CurrentLevel)",
+          "RTID(ZombossBattle@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(NewWaves@CurrentLevel)",
+          "RTID(GlacierModule@CurrentLevel)",
+          "RTID(FrozenPlantPlacement@CurrentLevel)"
+        ],
+        "WrittenBy": "大帝de眼泪"
+      }
+    },
+    {
+      "aliases": [
+        "ConveyorBelt"
+      ],
+      "objclass": "ConveyorSeedBankProperties",
+      "objdata": {
+        "DropDelayConditions": [
+          {
+            "Delay": 2,
+            "MaxPackets": 0
+          },
+          {
+            "Delay": 3,
+            "MaxPackets": 2
+          },
+          {
+            "Delay": 5,
+            "MaxPackets": 4
+          },
+          {
+            "Delay": 8,
+            "MaxPackets": 8
+          }
+        ],
+        "InitialPlantList": [
+          {
+            "MaxCount": 1,
+            "MaxWeightFactor": 0,
+            "Weight": 20,
+            "PlantType": "lavaguava"
+          },
+          {
+            "MaxCount": 1,
+            "MaxWeightFactor": 0,
+            "Weight": 20,
+            "PlantType": "shadowshroom"
+          },
+          {
+            "MaxCount": 2,
+            "MaxWeightFactor": 0,
+            "Weight": 15,
+            "PlantType": "hotpotato"
+          },
+          {
+            "MaxCount": 15,
+            "MaxWeightFactor": 0,
+            "Weight": 7,
+            "PlantType": "firepeashooter"
+          },
+          {
+            "MaxCount": 10,
+            "MaxWeightFactor": 0,
+            "Weight": 20,
+            "PlantType": "gatling"
+          },
+          {
+            "Weight": 15,
+            "MaxCount": 3,
+            "MaxDelivered": 5,
+            "MaxWeightFactor": 0,
+            "PlantType": "pepperpult"
+          },
+          {
+            "Weight": 15,
+            "MaxDelivered": 3,
+            "MaxWeightFactor": 1,
+            "PlantType": "torchwood"
+          }
+        ],
+        "SpeedConditions": [
+          {
+            "MaxPackets": 0,
+            "Speed": 110
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ZombossBattle"
+      ],
+      "objclass": "ZombossBattleModuleProperties",
+      "objdata": {
+        "ReservedColumnCount": 3,
+        "ZombossDeathColumn": 5,
+        "ZombossDeathRow": 3,
+        "ZombossMechType": "zombossmech_iceage2",
+        "ZombossSpawnGridPosition": {
+          "mX": 6,
+          "mY": 3
+        }
+      }
+    },
+    {
+      "aliases": [
+        "GlacierModule"
+      ],
+      "#comment": "Zombie Spawn Weights by Row From Left",
+      "objclass": "GlacierModuleProperties",
+      "objdata": {
+        "ZombieSpawnData": [
+          {
+            "Entries": [
+              {
+                "TypeName": "",
+                "Weight": 3
+              }
+            ]
+          },
+          {
+            "Entries": [
+              {
+                "TypeName": "",
+                "Weight": 2
+              },
+              {
+                "TypeName": "iceage_weasel",
+                "Weight": 3
+              },
+              {
+                "TypeName": "iceage_imp",
+                "Weight": 5
+              },
+              {
+                "TypeName": "iceage",
+                "Weight": 1
+              }
+            ]
+          },
+          {
+            "Entries": [
+              {
+                "TypeName": "",
+                "Weight": 1
+              },
+              {
+                "TypeName": "iceage_imp",
+                "Weight": 3
+              },
+              {
+                "TypeName": "iceage",
+                "Weight": 3
+              }
+            ]
+          },
+          {
+            "Entries": [
+              {
+                "TypeName": "",
+                "Weight": 1
+              },
+              {
+                "TypeName": "iceage_imp",
+                "Weight": 2
+              },
+              {
+                "TypeName": "iceage",
+                "Weight": 5
+              }
+            ]
+          },
+          {
+            "Entries": [
+              {
+                "TypeName": "",
+                "Weight": 0
+              },
+              {
+                "TypeName": "iceage_imp",
+                "Weight": 0
+              },
+              {
+                "TypeName": "iceage",
+                "Weight": 1
+              },
+              {
+                "TypeName": "iceage_armor3",
+                "Weight": 3
+              },
+              {
+                "TypeName": "iceage_hunter",
+                "Weight": 3
+              }
+            ]
+          },
+          {
+            "Entries": [
+              {
+                "TypeName": "",
+                "Weight": 0
+              },
+              {
+                "TypeName": "iceage",
+                "Weight": 0
+              },
+              {
+                "TypeName": "iceage_armor3",
+                "Weight": 4
+              },
+              {
+                "TypeName": "iceage_hunter",
+                "Weight": 3
+              },
+              {
+                "TypeName": "iceage_dodo",
+                "Weight": 1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "Waves": []
+      }
+    },
+    {
+      "aliases": [
+        "FrozenPlantPlacement"
+      ],
+      "objclass": "InitialPlantProperties",
+      "objdata": {
+        "InitialPlantPlacements": [
+          {
+            "Condition": "icecubed",
+            "GridX": 0,
+            "GridY": 0,
+            "TypeName": "powerlily"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 2,
+            "GridY": 2,
+            "TypeName": "powerlily"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 0,
+            "GridY": 4,
+            "TypeName": "powerlily"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 1,
+            "GridY": 1,
+            "TypeName": "powerlily"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 1,
+            "GridY": 3,
+            "TypeName": "powerlily"
+          }
+        ]
+      }
+    },
+    {
+      "objclass": "NarrativeProperties",
+      "aliases": [
+        "EditorFirstIntroNarrative"
+      ],
+      "objdata": {
+        "Flow": [
+          {
+            "Character": "zombossicon",
+            "Action": "NPC_ENTER"
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "Gurrreetings! Dr. Zomboss have prehistoric question for pitiful plant friends.",
+              "zh": "没想到你们居然能找到我的秘密基地，看来我得给你们一点教训......"
+            }
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "Why you hunt for taco? Is taco all it cracked up to be?",
+              "zh": "正好我的新作品已经完成了，虽然动力系统还得完善，但对付你们应该足够了......"
+            }
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "Could it be ... trap? Could it be ... trick?",
+              "zh": "那么，你们就好好享受这场美妙的宴会吧！啊哈哈哈哈！！！"
+            }
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "NPC_EXIT"
+          },
+          {
+            "Character": "crazydave",
+            "Action": "NPC_ENTER"
+          },
+          {
+            "Character": "winnie",
+            "Action": "NPC_ENTER"
+          },
+          {
+            "Character": "crazydave",
+            "Action": "EXCITED",
+            "Lines": {
+              "en": "Penny ... my taco!?!",
+              "zh": "潘妮，这家伙怎么疯疯癫癫的？宴会.....?会有我想要的玉米卷吗？"
+            }
+          },
+          {
+            "Character": "winnie",
+            "Action": "TIRED",
+            "Lines": {
+              "en": "User Dave, ignore the taco. Ignore the taunts.",
+              "zh": "哦，亲爱的戴夫，忘记玉米卷吧......"
+            }
+          },
+          {
+            "Character": "winnie",
+            "Action": "EXCITED",
+            "Lines": {
+              "en": "It's time to FIGHT DR. ZOMBOSS!",
+              "zh": "我们得先解决僵尸博士再说！"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "objclass": "NarrativeProperties",
+      "aliases": [
+        "EditorFirstOutroNarrative"
+      ],
+      "objdata": {
+        "Flow": [
+          {
+            "Character": "crazydave",
+            "Action": "NPC_ENTER"
+          },
+          {
+            "Character": "winnie",
+            "Action": "NPC_ENTER"
+          },
+          {
+            "Character": "winnie",
+            "Action": "EXCITED",
+            "Lines": {
+              "en": "Well done. We have defeated Dr. Zomboss.",
+              "zh": "干得漂亮。我们已击败僵尸博士。"
+            }
+          },
+          {
+            "Character": "crazydave",
+            "Action": "EXCITED",
+            "Lines": {
+              "en": "And his attempt to make me question my taco!",
+              "zh": "还有他试图让我参加宴会吃到玉米卷的阴谋！"
+            }
+          },
+          {
+            "Character": "winnie",
+            "Action": "TIRED",
+            "Lines": {
+              "en": "User Dave, our journey through time ...",
+              "zh": "戴夫，我们的时空之旅……"
+            }
+          },
+          {
+            "Character": "winnie",
+            "Action": "SAY",
+            "Lines": {
+              "en": "You know that it is about more than just a taco.",
+              "zh": "你明白这不仅仅关乎一个玉米卷。"
+            }
+          },
+          {
+            "Character": "crazydave",
+            "Action": "TIRED",
+            "Lines": {
+              "en": "I suppose you're right, Penny. It's also about-",
+              "zh": "我想你是对的，潘妮。这还关乎——"
+            }
+          },
+          {
+            "Character": "crazydave",
+            "Action": "NPC_EXIT"
+          },
+          {
+            "Character": "winnie",
+            "Action": "NPC_EXIT"
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "NPC_ENTER"
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "Ha! Dr. Zomboss not defeated!",
+              "zh": "可恶！我的新作品居然又被你们打败了！"
+            }
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "你们给我等着，阿......阿嚏！我还会在不同的时空等着你们交出脑子！"
+            }
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "阿......阿嚏！！！！！"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

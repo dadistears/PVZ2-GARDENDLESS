@@ -1,0 +1,1465 @@
+{
+  "#comment": "摇滚年代  第17天",
+  "version": 1,
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "LevelNumber": 1,
+        "Loot": "RTID(NoLoot@LevelModules)",
+        "Name": "僵尸最佳专辑     第17天",
+        "Description": "迈克尔·僵克逊的《Thriller》MV彻底改变了音乐僵们的进攻方式。",
+        "StartingSun": 50,
+        "StageModule": "RTID(EightiesStage@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(NewWaves@CurrentLevel)",
+          "RTID(ConveyorBelt@CurrentLevel)"
+        ],
+        "WrittenBy": "大帝de眼泪"
+      }
+    },
+    {
+      "aliases": [
+        "ConveyorBelt"
+      ],
+      "objclass": "ConveyorSeedBankProperties",
+      "objdata": {
+        "DropDelayConditions": [
+          {
+            "MaxPackets": 0,
+            "Delay": 5
+          }
+        ],
+        "InitialPlantList": [
+          {
+            "MaxDelivered": 15,
+            "Weight": 50,
+            "PlantType": "puffshroom"
+          }
+        ],
+        "SpeedConditions": [
+          {
+            "MaxPackets": 0,
+            "Speed": 100
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "MinNextWaveHealthPercentage": 0.5,
+        "MaxNextWaveHealthPercentage": 0.65,
+        "FlagWaveInterval": 6,
+        "WaveCount": 18,
+        "WaveSpendingPointIncrement": 10,
+        "WaveSpendingPoints": 100,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)",
+            "RTID(Wave3ModConveyor0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)",
+            "RTID(Wave9ModConveyor0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave11@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave12@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave13@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave14@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave15@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave16@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave17@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave18@CurrentLevel)"
+          ]
+        ],
+        "ZombieCountdownFirstWaveSecs": 20
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_rap"
+        ],
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3ModConveyor0"
+      ],
+      "objclass": "ModifyConveyorWaveActionProps",
+      "objdata": {
+        "Add": [
+          {
+            "Weight": 20,
+            "MaxCount": 5,
+            "Type": "RTID(homingthistle@PlantTypes)"
+          },
+          {
+            "Weight": 20,
+            "MaxCount": 5,
+            "Type": "RTID(holonut@PlantTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_rap"
+        ],
+        "AdditionalPlantfood": 2,
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_punk"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties_punk@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_punk_veteran@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_punk"
+        ],
+        "AdditionalPlantfood": 2,
+        "Zombies": [
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties_punk@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties_punk@ZombieTypes)",
+            "Row": "1"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_rap"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_armor4@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_rap"
+        ],
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "4"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_rap"
+        ],
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_armor4@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_armor4@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties_mc@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_punk_veteran@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties_punk_veteran@ZombieTypes)",
+            "Row": "4"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9ModConveyor0"
+      ],
+      "objclass": "ModifyConveyorWaveActionProps",
+      "objdata": {
+        "Add": [
+          {
+            "MaxCount": 2,
+            "Weight": 5,
+            "Type": "RTID(powerlily@PlantTypes)"
+          },
+          {
+            "MaxCount": 3,
+            "Weight": 5,
+            "Type": "RTID(jalapeno@PlantTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_punk"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_punk_veteran@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties_punk_veteran@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties_punk_veteran@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)",
+            "Row": "1"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_pop"
+        ],
+        "AdditionalPlantfood": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_glitter@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_glitter@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties_glitter@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_glitter@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties_glitter@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_metal"
+        ],
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_gargantuar@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_gargantuar@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_gargantuar@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties_punk@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties_punk@ZombieTypes)",
+            "Row": "4"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_rap"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_mc@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_mc@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_mc@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor4@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_rap"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_8bit"
+        ],
+        "AdditionalPlantfood": 2,
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave16"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor4@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave17"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_rap"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_mc@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_mc@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties_mc@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_mc@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties_mc@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave18"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_metal"
+        ],
+        "AdditionalPlantfood": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_gargantuar@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(eighties_gargantuar@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties_gargantuar@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(eighties_gargantuar@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(eighties_gargantuar@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties_gargantuar@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(eighties_gargantuar@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_armor4@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "objclass": "ZombieType",
+      "aliases": [
+        "eighties_arcade_local_1"
+      ],
+      "objdata": {
+        "Properties": "RTID(eighties_arcade_local_1_props@CurrentLevel)",
+        "ZombieBasedOn": "eighties_arcade"
+      }
+    },
+    {
+      "objclass": "ZombieProperties",
+      "aliases": [
+        "eighties_arcade_local_1_props"
+      ],
+      "objdata": {
+        "NumberOfArcadeCabinetsToSpawnWith": 1,
+        "WalkSPS": 0.19,
+        "EatDPS": 100,
+        "Toughness": 490,
+        "JamStyle": "jam_8bit",
+        "WavePointCost": 600,
+        "Weight": 1000,
+        "HitRect": "RTID(BullyHitRect@RectangleProps)",
+        "AttackRect": "RTID(BullyAttackRect@RectangleProps)"
+      }
+    },
+    {
+      "objclass": "ZombieType",
+      "aliases": [
+        "eighties_punk_veteran_local_1"
+      ],
+      "objdata": {
+        "Properties": "RTID(eighties_punk_veteran_local_1_props@CurrentLevel)",
+        "ZombieBasedOn": "eighties_punk_veteran"
+      }
+    },
+    {
+      "objclass": "ZombieProperties",
+      "aliases": [
+        "eighties_punk_veteran_local_1_props"
+      ],
+      "objdata": {
+        "WalkSPS": 0.23125,
+        "EatDPS": 100,
+        "Toughness": 1000,
+        "PushCooldown": 2,
+        "JamStyle": "jam_punk",
+        "WavePointCost": 500,
+        "Weight": 1000,
+        "SkunkCooldown": 5,
+        "SkunkChasingSpeedMult": 1,
+        "SkunkType": "eighties_skunk",
+        "HitRect": "RTID(CommonHitRect@RectangleProps)",
+        "AttackRect": "RTID(CommonAttackRect@RectangleProps)",
+        "SkunkPositionList": [
+          {
+            "x": -1,
+            "y": -1
+          },
+          {
+            "x": 0,
+            "y": -1
+          },
+          {
+            "x": 1,
+            "y": -1
+          },
+          {
+            "x": -1,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 0
+          },
+          {
+            "x": -1,
+            "y": 1
+          },
+          {
+            "x": 0,
+            "y": 1
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ]
+      }
+    },
+    {
+      "objclass": "ZombieType",
+      "aliases": [
+        "eighties_glitter_local_1"
+      ],
+      "objdata": {
+        "Properties": "RTID(eighties_glitter_local_1_props@CurrentLevel)",
+        "ZombieBasedOn": "eighties_glitter"
+      }
+    },
+    {
+      "objclass": "ZombieProperties",
+      "aliases": [
+        "eighties_glitter_local_1_props"
+      ],
+      "objdata": {
+        "WalkSPS": 0.19,
+        "EatDPS": 100,
+        "Toughness": 3000,
+        "RainbowTrailLength": 3.125,
+        "JamStyle": "jam_pop",
+        "WavePointCost": 300,
+        "Weight": 1000,
+        "HitRect": "RTID(CommonHitRect@RectangleProps)",
+        "AttackRect": "RTID(CommonAttackRect@RectangleProps)"
+      }
+    },
+    {
+      "objclass": "ZombieType",
+      "aliases": [
+        "eighties_gargantuar_local_1"
+      ],
+      "objdata": {
+        "Properties": "RTID(eighties_gargantuar_local_1_props@CurrentLevel)",
+        "ZombieBasedOn": "eighties_gargantuar"
+      }
+    },
+    {
+      "objclass": "ZombieProperties",
+      "aliases": [
+        "eighties_gargantuar_local_1_props"
+      ],
+      "objdata": {
+        "ZombieSort": "Gargantuar",
+        "CannotBeTransformedByWitchHazel": true,
+        "CannotBeEnlightenedBySolarSage": true,
+        "CannotBeGrabbedByPtero": true,
+        "CannotChangeLaneByPowerToss": true,
+        "CannotBeFlickedByPowerToss": true,
+        "CannotBeDraggedByTangleKelp": true,
+        "CannotBeTossedByCitron": true,
+        "CannotBeSwallowedByChomper": true,
+        "WalkSPS": 0.12,
+        "EatDPS": 100,
+        "Toughness": 8000,
+        "LivesInDeepWater": true,
+        "NormalDeathWhenMowed": true,
+        "CannotCarryPlantfoodsInWaves": true,
+        "SmashDamage": 1500,
+        "JamStyle": "jam_metal",
+        "WaveType": "eighties_gargantuar_wave",
+        "WavePointCost": 1500,
+        "Weight": 3000,
+        "ImpType": "eighties_imp",
+        "HitRect": "RTID(GargantuarHitRect@RectangleProps)",
+        "AttackRect": "RTID(GargantuarAttackRect@RectangleProps)"
+      }
+    }
+  ]
+}

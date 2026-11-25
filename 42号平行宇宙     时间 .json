@@ -1,0 +1,1146 @@
+{
+  "#comment": "42号平行宇宙     时间",
+  "version": 1,
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "LevelNumber": 1,
+        "Loot": "RTID(NoLoot@LevelModules)",
+        "FirstIntroNarrative": "EditorFirstIntroNarrative",
+        "ReplayIntroNarrative": "EditorFirstIntroNarrative",
+        "Name": "42号平行宇宙     时间",
+        "Description": "想了解这个宇宙？除了好好学习神秘的东方语言别无他法！",
+        "StartingSun": 100,
+        "StageModule": "RTID(HeroesStage@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(FastSunDropper@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(ModernMowers@LevelModules)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(NewWaves@CurrentLevel)"
+        ],
+        "WrittenBy": "大帝de眼泪"
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "preset",
+        "OverrideSeedSlotsCount": 7,
+        "PresetPlantList": [
+          {
+            "PlantType": "peashooter_local_1",
+            "Level": -1
+          },
+          {
+            "PlantType": "sunflower_local_1",
+            "Level": -1
+          },
+          {
+            "PlantType": "potatomine_local_1",
+            "Level": -1
+          },
+          {
+            "PlantType": "bonkchoy_local_1",
+            "Level": -1
+          },
+          {
+            "PlantType": "moonflower_local_1",
+            "Level": -1
+          },
+          {
+            "PlantType": "iceburg_local_1",
+            "Level": -1
+          },
+          {
+            "PlantType": "cherry_bomb",
+            "Level": -1
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "MinNextWaveHealthPercentage": 0.5,
+        "MaxNextWaveHealthPercentage": 0.65,
+        "FlagWaveInterval": 5,
+        "WaveCount": 15,
+        "WaveSpendingPointIncrement": 10,
+        "WaveSpendingPoints": 100,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave11@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave12@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave13@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave14@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave15@CurrentLevel)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_bronze_strong_local_1@CurrentLevel)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(kongfu_bronze_strong_local_1@CurrentLevel)",
+            "Row": "2"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_bronze_strong_local_1@CurrentLevel)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(kongfu_bronze_strong_local_1@CurrentLevel)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(kongfu_bronze_strong_local_1@CurrentLevel)",
+            "Row": "4"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(chicken_local_1@CurrentLevel)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(chicken_local_1@CurrentLevel)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(beach_fem_local_1@CurrentLevel)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(beach_fem_local_1@CurrentLevel)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(beach_fem_local_1@CurrentLevel)",
+            "Row": "4"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(tutorial_gargantuar_local_1@CurrentLevel)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(tutorial_gargantuar_local_1@CurrentLevel)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial_gargantuar_local_1@CurrentLevel)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(tutorial_gargantuar_local_1@CurrentLevel)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial_gargantuar_local_1@CurrentLevel)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(modern_newspaper_local_1@CurrentLevel)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(modern_newspaper_local_1@CurrentLevel)",
+            "Row": "4"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(modern_allstar_local_1@CurrentLevel)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_bronze_strong_local_1@CurrentLevel)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(kongfu_bronze_strong_local_1@CurrentLevel)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu_bronze_strong_local_1@CurrentLevel)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(kongfu_bronze_strong_local_1@CurrentLevel)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(kongfu_bomb_local_1@CurrentLevel)",
+            "Row": "3"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_bomb_local_1@CurrentLevel)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu_bomb_local_1@CurrentLevel)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(foodfight_turkey_local_1@CurrentLevel)",
+            "Row": "3"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(modern_allstar_local_1@CurrentLevel)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(modern_allstar_local_1@CurrentLevel)",
+            "Row": "4"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(tutorial_local_1@CurrentLevel)",
+            "Row": "3"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(beach_fem_local_1@CurrentLevel)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(beach_fem_local_1@CurrentLevel)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(beach_fem_local_1@CurrentLevel)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(beach_fem_local_1@CurrentLevel)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(beach_fem_local_1@CurrentLevel)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(foodfight_turkey_local_1@CurrentLevel)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(foodfight_turkey_local_1@CurrentLevel)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(foodfight_turkey_local_1@CurrentLevel)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(foodfight_turkey_local_1@CurrentLevel)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(foodfight_turkey_local_1@CurrentLevel)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lostcity_excavator@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(tutorial_local_1@CurrentLevel)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(tutorial_local_1@CurrentLevel)",
+            "Row": "2"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_bomb_local_1@CurrentLevel)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu_bomb_local_1@CurrentLevel)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(kongfu_bomb_local_1@CurrentLevel)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(kongfu_bomb_local_1@CurrentLevel)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(kongfu_bomb_local_1@CurrentLevel)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(modern_allstar_local_1@CurrentLevel)",
+            "Row": "3"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(chicken_local_1@CurrentLevel)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(chicken_local_1@CurrentLevel)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(chicken_local_1@CurrentLevel)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(chicken_local_1@CurrentLevel)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(chicken_local_1@CurrentLevel)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(tutorial_local_1@CurrentLevel)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial_local_1@CurrentLevel)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(tutorial_local_1@CurrentLevel)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(foodfight_turkey_local_1@CurrentLevel)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(foodfight_turkey_local_1@CurrentLevel)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(foodfight_turkey_local_1@CurrentLevel)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(foodfight_turkey_local_1@CurrentLevel)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(foodfight_turkey_local_1@CurrentLevel)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(modern_allstar_local_1@CurrentLevel)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(modern_allstar_local_1@CurrentLevel)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(modern_allstar_local_1@CurrentLevel)",
+            "Row": "4"
+          }
+        ]
+      }
+    },
+    {
+      "objclass": "ZombieType",
+      "aliases": [
+        "tutorial_local_1"
+      ],
+      "objdata": {
+        "Properties": "RTID(tutorial_local_1_props@CurrentLevel)",
+        "ZombieBasedOn": "tutorial",
+        "//ZombieRedirection": [
+          {
+            "Type": "tutorial_armor1",
+            "Weight": 1
+          },
+          {
+            "Type": "tutorial_armor2",
+            "Weight": 1
+          },
+          {
+            "Type": "tutorial_armor4",
+            "Weight": 1
+          }
+        ]
+      }
+    },
+    {
+      "objclass": "ZombieProperties",
+      "aliases": [
+        "tutorial_local_1_props"
+      ],
+      "objdata": {
+        "ChanceToReverse": 0,
+        "ZombieSort": "Normal",
+        "WalkSPS": 0.1,
+        "Toughness": 4000,
+        "EatDPS": 1000,
+        "WavePointCost": 100,
+        "Weight": 1000,
+        "HitRect": "RTID(CommonHitRect@RectangleProps)",
+        "AttackRect": "RTID(CommonAttackRect@RectangleProps)"
+      }
+    },
+    {
+      "objclass": "ZombieType",
+      "aliases": [
+        "modern_allstar_local_1"
+      ],
+      "objdata": {
+        "Properties": "RTID(modern_allstar_local_1_props@CurrentLevel)",
+        "ZombieBasedOn": "modern_allstar"
+      }
+    },
+    {
+      "objclass": "ZombieProperties",
+      "aliases": [
+        "modern_allstar_local_1_props"
+      ],
+      "objdata": {
+        "SmashDamage": 500,
+        "WalkSPS": 0.1,
+        "EatDPS": 100,
+        "Toughness": 3000,
+        "RunningSpeedScale": 4,
+        "WavePointCost": 1500,
+        "Weight": 3500,
+        "HitRect": "RTID(BullyHitRect@RectangleProps)",
+        "AttackRect": "RTID(BullyAttackRect@RectangleProps)"
+      }
+    },
+    {
+      "objclass": "ZombieType",
+      "aliases": [
+        "modern_newspaper_local_1"
+      ],
+      "objdata": {
+        "Properties": "RTID(modern_newspaper_local_1_props@CurrentLevel)",
+        "ZombieBasedOn": "modern_newspaper"
+      }
+    },
+    {
+      "objclass": "ZombieProperties",
+      "aliases": [
+        "modern_newspaper_local_1_props"
+      ],
+      "objdata": {
+        "WalkSPS": 0.12,
+        "EatDPS": 100,
+        "Toughness": 1000,
+        "EnragedDamageScale": 5,
+        "EnragedSpeedScale": 4,
+        "NewspaperHealth": 200,
+        "WavePointCost": 700,
+        "NewspaperBowlingLevel": 1,
+        "Weight": 4000,
+        "HitRect": "RTID(CommonHitRect@RectangleProps)",
+        "AttackRect": "RTID(CommonAttackRect@RectangleProps)"
+      }
+    },
+    {
+      "objclass": "ZombieType",
+      "aliases": [
+        "foodfight_turkey_local_1"
+      ],
+      "objdata": {
+        "Properties": "RTID(foodfight_turkey_local_1_props@CurrentLevel)",
+        "ZombieBasedOn": "foodfight_turkey"
+      }
+    },
+    {
+      "objclass": "ZombieProperties",
+      "aliases": [
+        "foodfight_turkey_local_1_props"
+      ],
+      "objdata": {
+        "CannotBeEnlightenedBySolarSage": true,
+        "KilledByShrinkingViolet": true,
+        "CannotBeGrabbedByPtero": true,
+        "CanBeEasilySwallowedByChomper": true,
+        "ImmuneToSporeShroom": true,
+        "WalkSPS": 0.1,
+        "WalkSPSVarience": 0,
+        "EatDPS": 50,
+        "Toughness": 2000,
+        "DoesNotDamageHeavilyToGarlic": true,
+        "NormalDeathWhenMowed": true,
+        "WavePointCost": 10,
+        "Weight": 0,
+        "HitRect": "RTID(CowboyChickenHitRect@RectangleProps)",
+        "AttackRect": "RTID(CowboyChickenAttackRect@RectangleProps)"
+      }
+    },
+    {
+      "objclass": "ZombieType",
+      "aliases": [
+        "chicken_local_1"
+      ],
+      "objdata": {
+        "Properties": "RTID(chicken_local_1_props@CurrentLevel)",
+        "ZombieBasedOn": "chicken"
+      }
+    },
+    {
+      "objclass": "ZombieProperties",
+      "aliases": [
+        "chicken_local_1_props"
+      ],
+      "objdata": {
+        "CannotBeEnlightenedBySolarSage": true,
+        "KilledByShrinkingViolet": true,
+        "CannotBeGrabbedByPtero": true,
+        "CanBeEasilySwallowedByChomper": true,
+        "ImmuneToSporeShroom": true,
+        "WalkSPS": 0.1,
+        "WalkSPSVarience": 0,
+        "EatDPS": 50,
+        "Toughness": 1000,
+        "DoesNotDamageHeavilyToGarlic": true,
+        "NormalDeathWhenMowed": true,
+        "WavePointCost": 10,
+        "Weight": 0,
+        "HitRect": "RTID(CowboyChickenHitRect@RectangleProps)",
+        "AttackRect": "RTID(CowboyChickenAttackRect@RectangleProps)"
+      }
+    },
+    {
+      "objclass": "ZombieType",
+      "aliases": [
+        "kongfu_bronze_strong_local_1"
+      ],
+      "objdata": {
+        "Properties": "RTID(kongfu_bronze_strong_local_1_props@CurrentLevel)",
+        "ZombieBasedOn": "kongfu_bronze_strong"
+      }
+    },
+    {
+      "objclass": "ZombieProperties",
+      "aliases": [
+        "kongfu_bronze_strong_local_1_props"
+      ],
+      "objdata": {
+        "ZombieSort": "Gargantuar",
+        "CannotBeTransformedByWitchHazel": true,
+        "CannotBeEnlightenedBySolarSage": true,
+        "CannotBeGrabbedByPtero": true,
+        "CannotChangeLaneByPowerToss": true,
+        "CannotBeFlickedByPowerToss": true,
+        "CannotBeDraggedByTangleKelp": true,
+        "CannotBeTossedByCitron": true,
+        "CannotBeSwallowedByChomper": true,
+        "CannotCarryPlantfoodsInWaves": true,
+        "SmashDamage": 1500,
+        "LivesInDeepWater": true,
+        "WalkSPS": 0.16,
+        "EatDPS": 100,
+        "Toughness": 190,
+        "NormalDeathWhenMowed": true,
+        "WavePointCost": 1500,
+        "Weight": 3000,
+        "HitRect": "RTID(GargantuarHitRect@RectangleProps)",
+        "AttackRect": "RTID(GargantuarAttackRect@RectangleProps)",
+        "EnragedWalkingSpeedScale": 1,
+        "EnragedSmashingSpeedScale": 0.5,
+        "EnrageHealthPct": 0.3
+      }
+    },
+    {
+      "objclass": "ZombieType",
+      "aliases": [
+        "tutorial_gargantuar_local_1"
+      ],
+      "objdata": {
+        "Properties": "RTID(tutorial_gargantuar_local_1_props@CurrentLevel)",
+        "ZombieBasedOn": "tutorial_gargantuar"
+      }
+    },
+    {
+      "objclass": "ZombieProperties",
+      "aliases": [
+        "tutorial_gargantuar_local_1_props"
+      ],
+      "objdata": {
+        "ZombieSort": "Gargantuar",
+        "CannotBeTransformedByWitchHazel": true,
+        "CannotBeEnlightenedBySolarSage": true,
+        "CannotBeGrabbedByPtero": true,
+        "CannotChangeLaneByPowerToss": true,
+        "CannotBeFlickedByPowerToss": true,
+        "CannotBeDraggedByTangleKelp": true,
+        "CannotBeTossedByCitron": true,
+        "CannotBeSwallowedByChomper": true,
+        "CannotCarryPlantfoodsInWaves": true,
+        "SmashDamage": 1500,
+        "WalkSPS": 0.12,
+        "EatDPS": 100,
+        "Toughness": 190,
+        "LivesInDeepWater": true,
+        "NormalDeathWhenMowed": true,
+        "WavePointCost": 1500,
+        "Weight": 3000,
+        "ImpType": "tutorial_imp",
+        "HitRect": "RTID(GargantuarHitRect@RectangleProps)",
+        "AttackRect": "RTID(GargantuarAttackRect@RectangleProps)"
+      }
+    },
+    {
+      "objclass": "ZombieType",
+      "aliases": [
+        "kongfu_bomb_local_1"
+      ],
+      "objdata": {
+        "Properties": "RTID(kongfu_bomb_local_1_props@CurrentLevel)",
+        "ZombieBasedOn": "kongfu_bomb"
+      }
+    },
+    {
+      "objclass": "ZombieProperties",
+      "aliases": [
+        "kongfu_bomb_local_1_props"
+      ],
+      "objdata": {
+        "ExplodeDamageToPlants": 4001,
+        "ExplodeDamageToZombies": 1800,
+        "WalkSPS": 2,
+        "EatDPS": 100,
+        "Toughness": 500,
+        "WavePointCost": 400,
+        "Weight": 800,
+        "HitRect": "RTID(CommonHitRect@RectangleProps)",
+        "AttackRect": "RTID(CommonAttackRect@RectangleProps)"
+      }
+    },
+    {
+      "objclass": "PlantType",
+      "aliases": [
+        "peashooter_local_1"
+      ],
+      "objdata": {
+        "PlantBasedOn": "peashooter",
+        "Properties": "RTID(peashooter_local_1_props@CurrentLevel)",
+        "//ShiftedPlantFeatures": {
+          "ALMANAC": "RTID(peashooter@PlantAlmanac)"
+        },
+        "//PlantRedirection": [
+          {
+            "Type": "peashooter",
+            "Weight": 1
+          }
+        ]
+      }
+    },
+    {
+      "objclass": "PlantProperties",
+      "aliases": [
+        "peashooter_local_1_props"
+      ],
+      "objdata": {
+        "ShootInterval": 1.35,
+        "ShootIntervalAdditional": 0.15,
+        "PlantfoodPeaCount": 60,
+        "Cooldown": 5,
+        "CooldownFrom": 1,
+        "SunCost": 100,
+        "BeghouledCost": 1000,
+        "Toughness": 300,
+        "PeaType": "pea",
+        "PeaTypePlantfood": "pea",
+        "Family": "Peashooter",
+        "MintBoostedProps": {
+          "ResistanceMult": 1,
+          "SpeedMult": 2,
+          "Plantfood": false
+        }
+      }
+    },
+    {
+      "objclass": "PlantType",
+      "aliases": [
+        "sunflower_local_1"
+      ],
+      "objdata": {
+        "PlantBasedOn": "sunflower",
+        "Properties": "RTID(sunflower_local_1_props@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "PlantProperties",
+      "aliases": [
+        "sunflower_local_1_props"
+      ],
+      "objdata": {
+        "PlantfoodTime": 3,
+        "SunValue": 25,
+        "ProduceInterval": 23.5,
+        "ProduceIntervalAdditional": 1.5,
+        "ProduceCountdownStart": 5,
+        "ProduceCountdownStartAdditional": 5,
+        "Cooldown": 5,
+        "CooldownFrom": 0,
+        "SunCost": 50,
+        "BeghouledCost": 1000,
+        "Toughness": 300,
+        "Family": "Sun",
+        "MintProductionFactor": 2,
+        "MintBoostedProps": {
+          "ResistanceMult": 1,
+          "SpeedMult": 2,
+          "Plantfood": true
+        }
+      }
+    },
+    {
+      "objclass": "PlantType",
+      "aliases": [
+        "potatomine_local_1"
+      ],
+      "objdata": {
+        "PlantBasedOn": "potatomine",
+        "Properties": "RTID(potatomine_local_1_props@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "PlantProperties",
+      "aliases": [
+        "potatomine_local_1_props"
+      ],
+      "objdata": {
+        "ChargeTime": 6,
+        "Damage": 1800,
+        "PlantfoodChildrenCount": 2,
+        "Cooldown": 20,
+        "CooldownFrom": 0.75,
+        "SunCost": 25,
+        "BeghouledCost": 1000,
+        "Toughness": 300,
+        "Family": "Explosive",
+        "MintDamageFactor": 3,
+        "MintBoostedProps": {
+          "ResistanceMult": 1,
+          "SpeedMult": 3,
+          "Plantfood": false
+        }
+      }
+    },
+    {
+      "objclass": "PlantType",
+      "aliases": [
+        "bonkchoy_local_1"
+      ],
+      "objdata": {
+        "PlantBasedOn": "bonkchoy",
+        "Properties": "RTID(bonkchoy_local_1_props@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "PlantProperties",
+      "aliases": [
+        "bonkchoy_local_1_props"
+      ],
+      "objdata": {
+        "Damage": 30,
+        "DamageHeavy": 60,
+        "DamagePlantfood": 120,
+        "PlantfoodHitCount": 50,
+        "ZombieDetectorWidth": 4,
+        "TombDetectorWidth": 3,
+        "AttackInterval": 0.3,
+        "Cooldown": 5,
+        "CooldownFrom": 1,
+        "SunCost": 300,
+        "BeghouledCost": 1000,
+        "Toughness": 3000,
+        "Family": "Melee",
+        "MintDamageFactor": 3,
+        "MintBoostedProps": {
+          "ResistanceMult": 1,
+          "SpeedMult": 2,
+          "Plantfood": false
+        }
+      }
+    },
+    {
+      "objclass": "PlantType",
+      "aliases": [
+        "moonflower_local_1"
+      ],
+      "objdata": {
+        "PlantBasedOn": "moonflower",
+        "Properties": "RTID(moonflower_local_1_props@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "PlantProperties",
+      "aliases": [
+        "moonflower_local_1_props"
+      ],
+      "objdata": {
+        "PlantfoodTime": 1,
+        "SunValue": 100,
+        "ProduceInterval": 23.5,
+        "ProduceIntervalAdditional": 1.5,
+        "ProduceCountdownStart": 5,
+        "ProduceCountdownStartAdditional": 5,
+        "Cooldown": 10,
+        "CooldownFrom": 0,
+        "SunCost": 200,
+        "BeghouledCost": 1500,
+        "Toughness": 300,
+        "Family": "Shadow",
+        "SunValueList": [
+          100,
+          150,
+          175,
+          200
+        ],
+        "MintBoostedProps": {
+          "ResistanceMult": 1,
+          "SpeedMult": 3,
+          "Plantfood": false
+        }
+      }
+    },
+    {
+      "objclass": "PlantType",
+      "aliases": [
+        "iceburg_local_1"
+      ],
+      "objdata": {
+        "PlantBasedOn": "iceburg",
+        "Properties": "RTID(iceburg_local_1_props@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "PlantProperties",
+      "aliases": [
+        "iceburg_local_1_props"
+      ],
+      "objdata": {
+        "FreezeDuration": 40,
+        "ChillDuration": 0,
+        "Cooldown": 20,
+        "CooldownFrom": 0.75,
+        "SunCost": 75,
+        "BeghouledCost": 1000,
+        "Toughness": 300,
+        "Family": "Cold",
+        "ImmuneToIceblock": true,
+        "MintFreezeDurationFactor": 4,
+        "Mint3x3Freezing": true,
+        "MintBoostedProps": {
+          "ResistanceMult": 1,
+          "SpeedMult": 1,
+          "Plantfood": false
+        }
+      }
+    },
+    {
+      "objclass": "ZombieType",
+      "aliases": [
+        "beach_fem_local_1"
+      ],
+      "objdata": {
+        "Properties": "RTID(beach_fem_local_1_props@CurrentLevel)",
+        "ZombieBasedOn": "beach_fem"
+      }
+    },
+    {
+      "objclass": "ZombieProperties",
+      "aliases": [
+        "beach_fem_local_1_props"
+      ],
+      "objdata": {
+        "ZombieSort": "Normal",
+        "WalkSPS": 0.18,
+        "EatDPS": 100,
+        "Toughness": 1290,
+        "WavePointCost": 100,
+        "Weight": 1000,
+        "HitRect": "RTID(CommonHitRect@RectangleProps)",
+        "AttackRect": "RTID(CommonAttackRect@RectangleProps)"
+      }
+    },
+    {
+      "objclass": "NarrativeProperties",
+      "objdata": {
+        "Flow": [
+          {
+            "Character": "winnie",
+            "Action": "NPC_ENTER"
+          },
+          {
+            "Character": "winnie",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "这些植物与僵尸可真奇怪。"
+            }
+          },
+          {
+            "Character": "crazydave",
+            "Action": "NPC_ENTER",
+            "Lines": {
+              "zh": ""
+            }
+          },
+          {
+            "Character": "winnie",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "啊，用户戴夫，终于找到你了！我们得尽快找到离开这里的办法！"
+            }
+          },
+          {
+            "Character": "crazydave",
+            "Action": "TIRED",
+            "Lines": {
+              "zh": "什么，离开这里？"
+            }
+          },
+          {
+            "Character": "crazydave",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "哦，我有必要向你声明：我叫硬汉戴夫，和你想找的那个戴夫恐怕不是同一个人。"
+            }
+          },
+          {
+            "Character": "winnie",
+            "Action": "TIRED",
+            "Lines": {
+              "zh": "啊？这样吗？"
+            }
+          },
+          {
+            "Character": "winnie",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "那么，硬汉戴夫先生，请问你知道——"
+            }
+          },
+          {
+            "Character": "crazydave",
+            "Action": "EXCITED",
+            "Lines": {
+              "zh": "先别聊了！帅哥僵博的僵尸大军要来了！"
+            }
+          }
+        ]
+      },
+      "aliases": [
+        "EditorFirstIntroNarrative"
+      ]
+    }
+  ]
+}

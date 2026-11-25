@@ -1,0 +1,1525 @@
+{
+  "#comment": "天空之城   第23天",
+  "version": 1,
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "LevelNumber": 1,
+        "Loot": "RTID(NoLoot@LevelModules)",
+        "Name": "天空之城   第23天",
+        "Description": "你的天空之旅！",
+        "StartingSun": 450,
+        "StageModule": "RTID(SkyStage@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(DefaultSunDropper@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(NewWaves@CurrentLevel)",
+          "RTID(FrozenPlantPlacement@CurrentLevel)"
+        ],
+        "WrittenBy": "大帝de眼泪"
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "chooser",
+        "UnlockAll": true
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "MinNextWaveHealthPercentage": 0.5,
+        "MaxNextWaveHealthPercentage": 0.65,
+        "FlagWaveInterval": 6,
+        "WaveCount": 18,
+        "WaveSpendingPointIncrement": 10,
+        "WaveSpendingPoints": 100,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)",
+            "RTID(Wave4ThunderChargeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)",
+            "RTID(Wave6DropShipEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave11@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave12ThunderChargeEvent0@CurrentLevel)",
+            "RTID(Wave12@CurrentLevel)",
+            "RTID(Wave12DropShipEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave13@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave14@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave15ThunderChargeEvent0@CurrentLevel)",
+            "RTID(Wave15@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave16@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave17@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave18DropShipEvent0@CurrentLevel)",
+            "RTID(Wave18@CurrentLevel)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_unarmed@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_unarmed@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_unarmed@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_battleplane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_battleplane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4ThunderChargeEvent0"
+      ],
+      "objclass": "ThunderChargeWaveActionProps",
+      "objdata": {
+        "TimeBeforeFirst": {
+          "Min": 3,
+          "Max": 3
+        },
+        "TimeBetween": {
+          "Min": 3,
+          "Max": 3
+        },
+        "WaveStartMessage": "[WARNING_THUNDER_STRIKE]",
+        "Thunders": [
+          {
+            "Sign": 1,
+            "LinkedPlantCount": 5
+          },
+          {
+            "Sign": -1,
+            "LinkedPlantCount": 5
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_twin_upper@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_twin_lower@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_twin@ZombieTypes)",
+            "Row": "3"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_unarmed_flag@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_twin_upper@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_twin_upper@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_twin_lower@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_twin_lower@ZombieTypes)",
+            "Row": "4"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6DropShipEvent0"
+      ],
+      "objclass": "DropShipZombieSpawnerProps",
+      "objdata": {
+        "DropShipPosition": {
+          "mX": 4,
+          "mY": 2
+        },
+        "DropShipType": "sky_dropship",
+        "DropShipShiftedProperties": {
+          "ImpType": "sky_imp",
+          "ImpCount": {
+            "Min": 2,
+            "Max": 4
+          },
+          "TimeBeforeFirst": {
+            "Min": 1,
+            "Max": 1
+          },
+          "TimeBetween": {
+            "Min": 2,
+            "Max": 2
+          },
+          "ImpLandingColumns": [
+            0,
+            1
+          ],
+          "ImpLandingRows": [],
+          "ImpFlyingDuration": {
+            "Min": 3,
+            "Max": 3.5
+          }
+        }
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_battleplane@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_battleplane@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_battleplane@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_battleplane@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_gargantuar@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_gargantuar@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_gargantuar@ZombieTypes)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_gargantuar_armor2_thrower@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_gargantuar_armor2_thrower@ZombieTypes)",
+            "Row": "4"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_battleplane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_battleplane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12ThunderChargeEvent0"
+      ],
+      "objclass": "ThunderChargeWaveActionProps",
+      "objdata": {
+        "TimeBeforeFirst": {
+          "Min": 3,
+          "Max": 3
+        },
+        "TimeBetween": {
+          "Min": 3,
+          "Max": 3
+        },
+        "WaveStartMessage": "[WARNING_THUNDER_STRIKE]",
+        "Thunders": [
+          {
+            "Sign": 1,
+            "LinkedPlantCount": 5
+          },
+          {
+            "Sign": -1,
+            "LinkedPlantCount": 5
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_arbiterx@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_arbiterx@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_arbiterx@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_gargantuar@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_gargantuar@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_unarmed_flag@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12DropShipEvent0"
+      ],
+      "objclass": "DropShipZombieSpawnerProps",
+      "objdata": {
+        "DropShipPosition": {
+          "mX": 4,
+          "mY": 2
+        },
+        "DropShipType": "sky_dropship",
+        "DropShipShiftedProperties": {
+          "ImpType": "sky",
+          "ImpCount": {
+            "Min": 4,
+            "Max": 4
+          },
+          "TimeBeforeFirst": {
+            "Min": 1,
+            "Max": 1
+          },
+          "TimeBetween": {
+            "Min": 2,
+            "Max": 2
+          },
+          "ImpLandingColumns": [
+            0,
+            1
+          ],
+          "ImpLandingRows": [],
+          "ImpFlyingDuration": {
+            "Min": 3,
+            "Max": 3.5
+          }
+        }
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_twin@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_twin@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_twin@ZombieTypes)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_twin@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_twin@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_twin@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_twin@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_twin@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_twin@ZombieTypes)",
+            "Row": "4"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15ThunderChargeEvent0"
+      ],
+      "objclass": "ThunderChargeWaveActionProps",
+      "objdata": {
+        "TimeBeforeFirst": {
+          "Min": 3,
+          "Max": 3
+        },
+        "TimeBetween": {
+          "Min": 3,
+          "Max": 3
+        },
+        "WaveStartMessage": "[WARNING_THUNDER_STRIKE]",
+        "Thunders": [
+          {
+            "Sign": 1,
+            "LinkedPlantCount": 5
+          },
+          {
+            "Sign": -1,
+            "LinkedPlantCount": 5
+          },
+          {
+            "Sign": 1,
+            "LinkedPlantCount": 5
+          },
+          {
+            "Sign": -1,
+            "LinkedPlantCount": 5
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_gargantuar_armor2_thrower@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_gargantuar_armor2_thrower@ZombieTypes)",
+            "Row": "4"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave16"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_gargantuar_armor2_thrower@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_gargantuar_armor2_thrower@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave17"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave18DropShipEvent0"
+      ],
+      "objclass": "DropShipZombieSpawnerProps",
+      "objdata": {
+        "DropShipPosition": {
+          "mX": 4,
+          "mY": 2
+        },
+        "DropShipType": "sky_dropship",
+        "DropShipShiftedProperties": {
+          "ImpType": "sky_imp",
+          "ImpCount": {
+            "Min": 4,
+            "Max": 4
+          },
+          "TimeBeforeFirst": {
+            "Min": 1,
+            "Max": 1
+          },
+          "TimeBetween": {
+            "Min": 2,
+            "Max": 2
+          },
+          "ImpLandingColumns": [
+            0,
+            1
+          ],
+          "ImpLandingRows": [],
+          "ImpFlyingDuration": {
+            "Min": 3,
+            "Max": 3.5
+          }
+        }
+      }
+    },
+    {
+      "aliases": [
+        "Wave18"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_unarmed_flag@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_armor1@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_twin_upper@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_twin_upper@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_twin@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_twin_lower@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_twin_lower@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_electric@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_arbiterx@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_arbiterx@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_arbiterx@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_arbiterx@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_arbiterx@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(sky_gargantuar_armor2_thrower@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_gargantuar_armor2_thrower@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_gargantuar_armor2_thrower@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_gargantuar_armor2_thrower@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_gargantuar_armor2_thrower@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_gargantuar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_gargantuar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_gargantuar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_gargantuar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_gargantuar@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "FrozenPlantPlacement"
+      ],
+      "objclass": "InitialPlantProperties",
+      "objdata": {
+        "InitialPlantPlacements": [
+          {
+            "GridX": 3,
+            "GridY": 0,
+            "TypeName": "floawerPot"
+          },
+          {
+            "GridX": 3,
+            "GridY": 1,
+            "TypeName": "floawerPot"
+          },
+          {
+            "GridX": 3,
+            "GridY": 2,
+            "TypeName": "floawerPot"
+          },
+          {
+            "GridX": 3,
+            "GridY": 3,
+            "TypeName": "floawerPot"
+          },
+          {
+            "GridX": 3,
+            "GridY": 4,
+            "TypeName": "floawerPot"
+          },
+          {
+            "GridX": 4,
+            "GridY": 4,
+            "TypeName": "floawerPot"
+          },
+          {
+            "GridX": 4,
+            "GridY": 3,
+            "TypeName": "floawerPot"
+          },
+          {
+            "GridX": 4,
+            "GridY": 2,
+            "TypeName": "floawerPot"
+          },
+          {
+            "GridX": 4,
+            "GridY": 1,
+            "TypeName": "floawerPot"
+          },
+          {
+            "GridX": 4,
+            "GridY": 0,
+            "TypeName": "floawerPot"
+          },
+          {
+            "GridX": 5,
+            "GridY": 0,
+            "TypeName": "floawerPot"
+          },
+          {
+            "GridX": 5,
+            "GridY": 1,
+            "TypeName": "floawerPot"
+          },
+          {
+            "GridX": 5,
+            "GridY": 2,
+            "TypeName": "floawerPot"
+          },
+          {
+            "GridX": 5,
+            "GridY": 3,
+            "TypeName": "floawerPot"
+          },
+          {
+            "GridX": 5,
+            "GridY": 4,
+            "TypeName": "floawerPot"
+          }
+        ]
+      }
+    }
+  ]
+}

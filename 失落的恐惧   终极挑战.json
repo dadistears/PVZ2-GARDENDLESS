@@ -1,0 +1,537 @@
+{
+  "#comment": "SandboxLostCity",
+  "version": 1,
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "CompletionAchievement": "lost_and_found",
+        "FirstIntroNarrative": "EditorFirstIntroNarrative",
+        "FirstOutroNarrative": "EditorFirstOutroNarrative",
+        "ForceToWorldMap": true,
+        "LevelNumber": 42,
+        "LoadDefaultMusic": false,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "MusicType": "MiniGame_A",
+        "NormalPresentTable": "egypt_normal_01",
+        "RepeatPlayForceToWorldMap": true,
+        "ShinyPresentTable": "egypt_shiny_01",
+        "VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)",
+        "ReplayIntroNarrative": "EditorFirstIntroNarrative",
+        "ReplayOutroNarrative": "EditorFirstOutroNarrative",
+        "Name": "失落的恐惧   终极挑战",
+        "Description": "伪蒸汽轰鸣者关",
+        "StartingSun": 7950,
+        "StageModule": "RTID(LostCityVolcanoStage@LevelModules)",
+        "Modules": [
+          "RTID(ZombossIntro@LevelModules)",
+          "RTID(ZombossBattle@CurrentLevel)",
+          "RTID(TheAutoCollect@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(LostCityTrapTileGroups@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(InitialGridItems@CurrentLevel)"
+        ],
+        "WrittenBy": "大帝de眼泪"
+      }
+    },
+    {
+      "objclass": "AutoCollectProperties",
+      "aliases": [
+        "TheAutoCollect"
+      ],
+      "objdata": {
+        "AutoCollectList": [
+          "sun"
+        ]
+      }
+    },
+    {
+      "objclass": "TrapTileProperties",
+      "aliases": [
+        "LostCityTrapTileGroups"
+      ],
+      "objdata": {
+        "TrapTiles": [
+          {
+            "Group": "flame",
+            "RecoverDelay": 7.5,
+            "Location": {
+              "mX": 8,
+              "mY": 0
+            }
+          },
+          {
+            "Group": "flame",
+            "RecoverDelay": 7.5,
+            "Location": {
+              "mX": 8,
+              "mY": 1
+            }
+          },
+          {
+            "Group": "flame",
+            "RecoverDelay": 7.5,
+            "Location": {
+              "mX": 8,
+              "mY": 2
+            }
+          },
+          {
+            "Group": "flame",
+            "RecoverDelay": 7.5,
+            "Location": {
+              "mX": 8,
+              "mY": 3
+            }
+          },
+          {
+            "Group": "flame",
+            "RecoverDelay": 7.5,
+            "Location": {
+              "mX": 8,
+              "mY": 4
+            }
+          },
+          {
+            "Group": "thunder",
+            "RecoverDelay": 35,
+            "Location": {
+              "mX": 3,
+              "mY": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "objclass": "ZombossBattleModuleProperties",
+      "aliases": [
+        "ZombossBattle"
+      ],
+      "objdata": {
+        "ReservedColumnCount": 2,
+        "ZombossDeathColumn": 5,
+        "ZombossDeathRow": 3,
+        "ZombossMechType": "zombossmech_lostcity2",
+        "ZombossSpawnGridPosition": {
+          "mX": 6,
+          "mY": 3
+        }
+      }
+    },
+    {
+      "objclass": "WaveManagerModuleProperties",
+      "aliases": [
+        "NewWaves"
+      ],
+      "objdata": {
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "WaveManagerProperties",
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objdata": {
+        "MinNextWaveHealthPercentage": 0.5,
+        "MaxNextWaveHealthPercentage": 0.65,
+        "FlagWaveInterval": 5,
+        "WaveCount": 0,
+        "WaveSpendingPointIncrement": 10,
+        "WaveSpendingPoints": 100,
+        "Waves": []
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "chooser"
+      }
+    },
+    {
+      "objclass": "NarrativeProperties",
+      "objdata": {
+        "Flow": [
+          {
+            "Character": "zombossicon",
+            "Action": "NPC_ENTER"
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "嗨！好久不见！胡子，破铁皮！噢，对了！还有你！"
+            }
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "你们还在不知死活地寻找玉米卷吗？"
+            }
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "天哪，你们可太不容易了。"
+            }
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "为了奖励你们，就让你们见识下我的古代魔法与现代科技结合的杰作！"
+            }
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "NPC_EXIT",
+            "Lines": {
+              "zh": ""
+            }
+          },
+          {
+            "Character": "crazydave",
+            "Action": "NPC_ENTER",
+            "Lines": {
+              "zh": ""
+            }
+          },
+          {
+            "Character": "crazydave",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "他是谁来着？僵尸......哦！僵尸硕士！"
+            }
+          },
+          {
+            "Character": "winnie",
+            "Action": "NPC_ENTER",
+            "Lines": {
+              "zh": ""
+            }
+          },
+          {
+            "Character": "winnie",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "啊，用户戴夫，我在此纠正：他是僵尸博士，不是僵尸硕士。"
+            }
+          },
+          {
+            "Character": "winnie",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "也许我们该掐个表，看看他这次能撑多久。"
+            }
+          },
+          {
+            "Character": "crazydave",
+            "Action": "NPC_EXIT",
+            "Lines": {
+              "zh": ""
+            }
+          },
+          {
+            "Character": "winnie",
+            "Action": "NPC_EXIT",
+            "Lines": {
+              "zh": ""
+            }
+          }
+        ]
+      },
+      "aliases": [
+        "EditorFirstIntroNarrative"
+      ]
+    },
+    {
+      "objclass": "NarrativeProperties",
+      "objdata": {
+        "Flow": [
+          {
+            "Character": "zombossicon",
+            "Action": "NPC_ENTER"
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "你以为你赢了对吗？"
+            }
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "但你不知道，一些可怕的事情正在发生！"
+            }
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "哈哈哈哈哈！敬请期待吧！你们马上就能见到一些“新东西”！"
+            }
+          },
+          {
+            "Character": "crazydave",
+            "Action": "NPC_ENTER",
+            "Lines": {
+              "zh": ""
+            }
+          },
+          {
+            "Character": "crazydave",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "他说话还蛮唬人的，哈哈哈哈。"
+            }
+          },
+          {
+            "Character": "winnie",
+            "Action": "NPC_ENTER",
+            "Lines": {
+              "zh": ""
+            }
+          },
+          {
+            "Character": "winnie",
+            "Action": "SAY",
+            "Lines": {
+              "zh": "用户戴夫，也许他说的是真的。我们到其他时空后得加强防范。"
+            }
+          },
+          {
+            "Character": "crazydave",
+            "Action": "NPC_EXIT",
+            "Lines": {
+              "zh": ""
+            }
+          },
+          {
+            "Character": "winnie",
+            "Action": "NPC_EXIT",
+            "Lines": {
+              "zh": ""
+            }
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "NPC_EXIT",
+            "Lines": {
+              "zh": ""
+            }
+          }
+        ]
+      },
+      "aliases": [
+        "EditorFirstOutroNarrative"
+      ]
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "ChallengesAlwaysAvailable": true,
+        "Challenges": [
+          [
+            "RTID(SunUsed@CurrentLevel)",
+            "RTID(BeatTheLevel@CurrentLevel)",
+            "RTID(SunProduced@CurrentLevel)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SunUsed"
+      ],
+      "objclass": "StarChallengeSunUsedProps",
+      "objdata": {
+        "MaximumSun": 12000
+      }
+    },
+    {
+      "aliases": [
+        "BeatTheLevel"
+      ],
+      "objclass": "StarChallengeBeatTheLevelProps",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "InitialGridItems"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 1,
+            "GridY": 0,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 0,
+            "GridY": 1,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 1,
+            "GridY": 1,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 0,
+            "GridY": 2,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 1,
+            "GridY": 2,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 0,
+            "GridY": 3,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 1,
+            "GridY": 3,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 1,
+            "GridY": 4,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 4,
+            "GridY": 0,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 4,
+            "GridY": 1,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 4,
+            "GridY": 3,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 4,
+            "GridY": 4,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 2,
+            "GridY": 0,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 2,
+            "GridY": 1,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 2,
+            "GridY": 2,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 2,
+            "GridY": 3,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 2,
+            "GridY": 4,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 5,
+            "GridY": 0,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 5,
+            "GridY": 1,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 5,
+            "GridY": 2,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 5,
+            "GridY": 3,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 5,
+            "GridY": 4,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 0,
+            "GridY": 4,
+            "TypeName": "boulder_trap_falling_forward"
+          },
+          {
+            "GridX": 0,
+            "GridY": 0,
+            "TypeName": "boulder_trap_falling_forward"
+          },
+          {
+            "GridX": 4,
+            "GridY": 2,
+            "TypeName": "boulder_trap_falling_forward"
+          },
+          {
+            "GridX": 3,
+            "GridY": 0,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 3,
+            "GridY": 1,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 3,
+            "GridY": 3,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 3,
+            "GridY": 4,
+            "TypeName": "goldtile"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SunProduced"
+      ],
+      "objclass": "StarChallengeSunProducedProps",
+      "objdata": {
+        "TargetSun": 4000
+      }
+    }
+  ]
+}

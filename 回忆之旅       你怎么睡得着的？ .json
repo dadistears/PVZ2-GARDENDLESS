@@ -1,0 +1,1004 @@
+{
+  "#comment": "你怎么睡得着的？",
+  "version": 1,
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "LevelNumber": 1,
+        "Loot": "RTID(NoLoot@LevelModules)",
+        "Name": "你怎么睡得着的？",
+        "Description": "你的回忆之旅！",
+        "StartingSun": 50,
+        "StageModule": "RTID(KongfuStage@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(DefaultSunDropper@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(KongfuMowers@LevelModules)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(NewWaves@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(ProtectThePlant@CurrentLevel)",
+          "RTID(Gravestones@CurrentLevel)"
+        ],
+        "WrittenBy": "大帝de眼泪"
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "ChallengesAlwaysAvailable": true,
+        "Challenges": [
+          [
+            "RTID(BeatTheLevel@CurrentLevel)",
+            "RTID(KillZombies@CurrentLevel)",
+            "RTID(SunProduced@CurrentLevel)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "BeatTheLevel"
+      ],
+      "objclass": "StarChallengeBeatTheLevelProps",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "KillZombies"
+      ],
+      "objclass": "StarChallengeKillZombiesInTimeProps",
+      "objdata": {
+        "Time": 5,
+        "ZombiesToKill": 8
+      }
+    },
+    {
+      "aliases": [
+        "SunProduced"
+      ],
+      "objclass": "StarChallengeSunProducedProps",
+      "objdata": {
+        "TargetSun": 3000
+      }
+    },
+    {
+      "aliases": [
+        "ProtectThePlant"
+      ],
+      "objclass": "ProtectThePlantChallengeProperties",
+      "objdata": {
+        "MustProtectCount": 5,
+        "Plants": [
+          {
+            "GridX": 3,
+            "GridY": 0,
+            "PlantType": "firegourd"
+          },
+          {
+            "GridX": 3,
+            "GridY": 1,
+            "PlantType": "firegourd"
+          },
+          {
+            "GridX": 3,
+            "GridY": 2,
+            "PlantType": "firegourd"
+          },
+          {
+            "GridX": 3,
+            "GridY": 3,
+            "PlantType": "firegourd"
+          },
+          {
+            "GridX": 3,
+            "GridY": 4,
+            "PlantType": "firegourd"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "preset",
+        "PresetPlantList": [
+          {
+            "PlantType": "sunflower",
+            "Level": -1
+          },
+          {
+            "PlantType": "intensivecarrot",
+            "Level": -1
+          },
+          {
+            "PlantType": "jalapeno",
+            "Level": -1
+          },
+          {
+            "PlantType": "garlic",
+            "Level": -1
+          },
+          {
+            "PlantType": "cherry_bomb",
+            "Level": -1
+          },
+          {
+            "PlantType": "potatomine",
+            "Level": -1
+          },
+          {
+            "PlantType": "iceburg",
+            "Level": -1
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "MinNextWaveHealthPercentage": 0.5,
+        "MaxNextWaveHealthPercentage": 0.65,
+        "FlagWaveInterval": 5,
+        "WaveCount": 10,
+        "WaveSpendingPointIncrement": 10,
+        "WaveSpendingPoints": 100,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)",
+            "RTID(Wave5QigongStrikeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)",
+            "RTID(Wave6QigongStrikeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)",
+            "RTID(Wave9QigongStrikeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)",
+            "RTID(Wave10QigongStrikeEvent0@CurrentLevel)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(monk@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(monk@ZombieTypes)",
+            "Row": "4"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(monk@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(monk@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(monk@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(monk_armor2@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu_armor1@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(kongfu_armor1@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 2,
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu_armor2@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu_armor3@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(kongfu_armor3@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(kongfu_drink@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(monk@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(monk@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(monk@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(monk_armor1@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(monk_armor1@ZombieTypes)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(monk@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(monk@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(monk_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(monk_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5QigongStrikeEvent0"
+      ],
+      "objclass": "QigongStrikeWaveActionProps",
+      "objdata": {
+        "WaveStartMessage": "[WARNING_QIGONG_STRIKE]",
+        "Zombies": [
+          {
+            "Type": "abbot_imp",
+            "Rows": [
+              4
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 1
+          },
+          {
+            "Type": "abbot_imp",
+            "Rows": [
+              3
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 1
+          },
+          {
+            "Type": "abbot_imp",
+            "Rows": [
+              2
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 1
+          },
+          {
+            "Type": "abbot_imp",
+            "Rows": [
+              1
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 1
+          },
+          {
+            "Type": "abbot_imp",
+            "Rows": [
+              0
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 1
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(kongfu_drink@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(kongfu_drink@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6QigongStrikeEvent0"
+      ],
+      "objclass": "QigongStrikeWaveActionProps",
+      "objdata": {
+        "WaveStartMessage": "[WARNING_QIGONG_STRIKE]",
+        "Zombies": [
+          {
+            "Type": "abbot_chi",
+            "Rows": [
+              2
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 1
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_armor3@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu_armor3@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(kongfu_armor3@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(kongfu_armor3@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(kongfu_armor3@ZombieTypes)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 3,
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(kongfu@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(abbot_chi@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(abbot_chi@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(abbot_chi@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(abbot_chi@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(abbot_chi@ZombieTypes)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_chi@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu_chi@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(kongfu_chi@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(kongfu_chi@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(kongfu_chi@ZombieTypes)",
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(abbot_torch@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(abbot_torch@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(abbot_torch@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(abbot_torch@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(abbot_torch@ZombieTypes)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9QigongStrikeEvent0"
+      ],
+      "objclass": "QigongStrikeWaveActionProps",
+      "objdata": {
+        "WaveStartMessage": "[WARNING_QIGONG_STRIKE]",
+        "Zombies": [
+          {
+            "Type": "kongfu_chi",
+            "Rows": [
+              4
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 1
+          },
+          {
+            "Type": "kongfu_chi",
+            "Rows": [
+              3
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 1
+          },
+          {
+            "Type": "kongfu_chi",
+            "Rows": [
+              2
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 1
+          },
+          {
+            "Type": "kongfu_chi",
+            "Rows": [
+              1
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 1
+          },
+          {
+            "Type": "kongfu_chi",
+            "Rows": [
+              0
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 1
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_armor4@ZombieTypes)",
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(kongfu_gong@ZombieTypes)",
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(kongfu_gong@ZombieTypes)",
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(monk_armor4@ZombieTypes)",
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(kongfu_armor4@ZombieTypes)",
+            "Row": "5"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10QigongStrikeEvent0"
+      ],
+      "objclass": "QigongStrikeWaveActionProps",
+      "objdata": {
+        "WaveStartMessage": "[WARNING_QIGONG_STRIKE]",
+        "Zombies": [
+          {
+            "Type": "abbot_chi",
+            "Rows": [
+              4
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 1
+          },
+          {
+            "Type": "abbot_chi",
+            "Rows": [
+              3
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 1
+          },
+          {
+            "Type": "abbot_chi",
+            "Rows": [
+              2
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 1
+          },
+          {
+            "Type": "abbot_chi",
+            "Rows": [
+              1
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 1
+          },
+          {
+            "Type": "abbot_chi",
+            "Rows": [
+              0
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 1
+          },
+          {
+            "Type": "abbot_imp",
+            "Rows": [
+              4
+            ],
+            "Columns": [
+              4
+            ],
+            "Delay": 10
+          },
+          {
+            "Type": "abbot_imp",
+            "Rows": [
+              3
+            ],
+            "Columns": [
+              4
+            ],
+            "Delay": 10
+          },
+          {
+            "Type": "abbot_imp",
+            "Rows": [
+              2
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 10
+          },
+          {
+            "Type": "abbot_imp",
+            "Rows": [
+              1
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 10
+          },
+          {
+            "Type": "abbot_imp",
+            "Rows": [
+              0
+            ],
+            "Columns": [
+              5
+            ],
+            "Delay": 10
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Gravestones"
+      ],
+      "objclass": "GravestoneProperties",
+      "objdata": {
+        "ForceSpawnData": [
+          {
+            "GridX": 6,
+            "GridY": 1,
+            "TypeName": "kongfu_rack_blade"
+          },
+          {
+            "GridX": 6,
+            "GridY": 3,
+            "TypeName": "kongfu_rack_bomb"
+          }
+        ]
+      }
+    }
+  ]
+}
